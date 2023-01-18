@@ -1,5 +1,5 @@
 {
-  "name": "lyfbro",
+  "name": "lyfbro-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garethtflynn/Lyfbro.git"
+    "url": "git+https://github.com/garethtflynn/Lyfbro-App.git"
   },
   "author": "",
   "license": "ISC",
@@ -31,7 +31,7 @@
     "cal-heatmap": "^3.6.2"
   },
   "bugs": {
-    "url": "https://github.com/garethtflynn/Lyfbro/issues"
+    "url": "https://github.com/garethtflynn/Lyfbro-App/issues"
   },
-  "homepage": "https://github.com/garethtflynn/Lyfbro#readme"
+  "homepage": "https://github.com/garethtflynn/Lyfbro-App#readme"
 }

@@ -1,29 +1,46 @@
  {{!-- new login form --}}
-<h1>Sign In</h1>
+<div id="signIn" class="flex flex-col justify-center items-center mx-auto h-auto max-w-screen-sm sm:w-[550px] bg-gray-800 rounded shadow-black shadow-2xl p-1">
+<h1 class="text-2xl mb-5 font-bold mt-2 text-green-500">Sign In</h1>
 <form>
   <div class="mb-6">
     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-    <input type="email" id="email-login" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
+    <input type="email" id="email-login" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@mail.com" required>
   </div>
   <div class="mb-6">
     <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
-    <input type="password" id="password-login" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+    <input type="password" id="password-login" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="password" required>
   </div>
-  <button type="submit" class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 login-form" id="login-form">Submit</button>
-</form>
+  <div class="flex sm:gap-1 md:gap-10">
 
-<h1>Sign Up</h1>
+  <button type="submit" class="hover:scale-110 duration-200 text-gray-900 bg-gradient-to-r from-green-400 via-green-500 to-green-600 focus:ring-4 focus:outline-none focus:ring-black-300 dark:focus:ring-green-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 login-form" id="login-form">Sign In</button>
+  <button id="demo-user" type="submit" class="font-bold text-gray-900 bg-gradient-to-r from-fuchsia-700 via-fuchsia-800 to-fuchsia-900 hover:scale-110 duration-200 focus:ring-4 focus:outline-none focus:ring-black-300 dark:focus:ring-black-800 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 login-form" id="demo">DEMO-USER</button>
+  
+  </div>
+  <div>
+    <p id='hideSignin' class="px-4 text-center pt-2 hover:font-bold hover:underline">Don't have an account? Sign-Up</p>
+  </div>
+</form>
+</div>
+{{!-- sign up form --}}
+<div id="signUp" class="hidden flex flex-col justify-center items-center mx-auto h-auto max-w-screen-sm sm:w-[550px] bg-gray-800 rounded shadow-black shadow-2xl">
+<h1 class="text-2xl mb-5 font-bold mt-2 text-green-500">Sign Up</h1>
 <form>
   <div class="mb-6">
     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-    <input type="email" id="email-signup" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 email-signup" placeholder="name@flowbite.com" required>
+    <input type="email" id="email-signup" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 email-signup" placeholder="name@mail.com" required>
   </div>
   <div class="mb-6">
     <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
-    <input type="password" id="password-signup" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 password-signup" required>
+    <input type="password" id="password-signup" placeholder="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 password-signup" required>
   </div>
-  <button type="submit" class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 signup-form" id="signup-form">Submit</button>
+  <div class="flex justify-center">
+  <button type="submit" class="hover:scale-110 duration-200 text-gray-900 bg-gradient-to-r from-green-400 via-green-500 to-green-600 focus:ring-4 focus:outline-none focus:ring-black-300 dark:focus:ring-green-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 signup-form" id="signup-form">Sign Up</button>
+  </div>
+  <div>
+    <p id='hideSignup'class="px-4 text-center pt-2 hover:font-bold hover:underline">Already have an account? Sign-In</p>
+  </div>
 </form>
+</div>
 
 
 <script src="./js/login.js"></script>
