@@ -27,6 +27,7 @@ const sess = {
     })
 };
 
+app.use(express.static('public')) 
 app.use(session(sess));
 app.set('view engine', 'handlebars');
 app.engine('handlebars', hbs.engine);

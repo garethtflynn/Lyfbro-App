@@ -50,7 +50,6 @@ async function createCardioGraph() {
         datatype: "json",
         domain: "month",
         subDomain: "x_day",
-        start: new Date(2022, 9, 13),
         cellSize: 35,
         cellRadius: 3,
         cellPadding: 5,
@@ -85,7 +84,6 @@ async function createStrengthGraph() {
         datatype: "json",
         domain: "month",
         subDomain: "x_day",
-        start: new Date(2022, 9, 13),
         cellSize: 35,
         cellRadius: 3,
         cellPadding: 5,
@@ -120,7 +118,6 @@ async function createMindfulnessGraph() {
         datatype: "json",
         domain: "month",
         subDomain: "x_day",
-        start: new Date(2022, 9, 13),
         cellSize: 35,
         cellRadius: 3,
         cellPadding: 5,
@@ -146,6 +143,11 @@ async function createMindfulnessGraph() {
     })
 };
 
-createCardioGraph()
-createMindfulnessGraph()
-createStrengthGraph()
+
+if (userData == null){
+    location.replace('/login');
+} else {
+    createCardioGraph()
+    createMindfulnessGraph()
+    createStrengthGraph()
+}
