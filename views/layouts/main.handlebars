@@ -28,7 +28,7 @@
     <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
     <title>Lyfbro</title>
   </head>
-  <body class="dark:bg-slate-900">
+  <body class="dark:bg-slate-900 h-auto">
     <header class="bg-gray-800">
       <nav>
       {{#if logged_in}}
@@ -57,16 +57,14 @@
       </nav>
     </header>
     <!-- Body -->
-    <main class="dark:bg-slate-900 dark:text-green-100 m-16">
+    <main class="dark:bg-slate-900 dark:text-green-100 m-16 h-fit">
       {{{body}}}
     </main>
-
-    <footer>
-        <div class='bg-slate-900 flex justify-center p-4'>
-        <p class=' text-slate-50 text-xs'>
+  
+    <footer class='bg-slate-900 flex justify-center p-4'>
+        <p class='text-slate-50 text-xs'>
         © 2023 Lyfbro. All rights reserved.
         </p>
-        </div>
     </footer>
 
     <!-- for logged in users -->
