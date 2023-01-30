@@ -99,4 +99,8 @@ Log mood ![image](https://user-images.githubusercontent.com/30813052/194967817-0
 Sign Up ![image](https://user-images.githubusercontent.com/30813052/194967846-fa543dd0-03ce-4cbe-ae7b-48b8369e73da.png)
 Log In ![image](https://user-images.githubusercontent.com/30813052/194967872-ee5169a8-71a9-4aec-8521-4aa4465591b4.png)
 
-## Demo Video
+
+## Links  
+
+* [Repository](https://github.com/garethtflynn/Lyfbro-App)
+* [Deployed Application](https://lyfbrohealth.herokuapp.com/)
